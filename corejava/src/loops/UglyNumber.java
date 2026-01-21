@@ -16,7 +16,7 @@ public class UglyNumber {
 				return true;
 			}
 		}
-		return num==1;
+		return num==1; 
 	}
 
 	public static void main(String[] args) {
