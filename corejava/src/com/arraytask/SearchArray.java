@@ -18,7 +18,7 @@ public class SearchArray {
 	           if(arr[i]==element) {
 					System.out.println("Element found at position: "+(i+1));
 					found =true;
-					break;
+//					break;
 				}
 			}
 			if(!found) {

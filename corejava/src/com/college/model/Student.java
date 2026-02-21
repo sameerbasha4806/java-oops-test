@@ -1,42 +1,54 @@
 package com.college.model;
 
 public class Student extends Person{
-	private String studentId;
-	private String department;
-	private String courseName;
-	public Student() {
+		private int studentId;
+		private String department;
+		private String courseName;
 		
+		public Student() {
+			
+		}
+		
+		public Student(int studentId,String department,String courseName) {
+			super();
+			this.studentId=studentId;
+			this.department=department;
+			this.courseName=courseName;
+		}
+
+		
+		public int getStudentId() {
+			return studentId;
+		}
+		public String getDepartment() {
+			return department;
+		}
+		public String getCourseName() {
+			return courseName;
+		}
+		
+		public void setStudentId(int studentId) {
+			this.studentId=studentId;
+			
+		}
+		public void setDepartment(String department) {
+			this.department=department;
+		}
+		
+		public void setCourseName(String courseName) {
+			this.courseName=courseName;
+		}
+		
+		public void displayStudentDetails() {
+			System.out.println("--------------Student details---------");
+			System.out.println("Name: "+getName());
+			System.out.println("Age: "+getAge());
+			System.out.println("Contact Number: "+getContactNumber());
+			System.out.println("Student Id: "+studentId);
+			System.out.println("Department: "+department);
+			System.out.println("Course Name: "+courseName);
+		}
+			
 	}
-	public Student(String studentId, String department, String courseName) {
-		this.studentId=studentId;
-		this.department=department;
-		this.courseName=courseName;
-	}
-	public String getStudentId() {
-		return studentId;
-	}
-	public String getdepartment() {
-		return department;
-	}
-	public String getcourseName() {
-		return courseName;
-	}
-	public void setStudentId(String studentId) {
-		this.studentId=studentId;
-	}
-	public void setdepartment(String department) {
-		this.department=department;
-	}
-	public void setcourseName(String courseName) {
-		this.courseName=courseName;
-	}
-	public void displayStudentDetails() {
-//		System.out.println("Name: "+getName());
-//		System.out.println("Age: "+getAge());
-//		System.out.println("contact: "+getcontactNumber());
-		System.out.println("Student Id: "+studentId);
-		System.out.println("Department: "+department);
-		System.out.println("course: "+courseName);
-	}
-	
-}
+
+

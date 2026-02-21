@@ -1,4 +1,4 @@
-package elcBlc;
+ package elcBlc;
 
 public class SwapThree {
 	int a;
